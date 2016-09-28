@@ -1,8 +1,10 @@
-# node-eddystone-beacon
+# psw-node-eddystone-beacon
 
 Create an [Eddystone](https://github.com/google/eddystone) Beacon using Node.js
 
 [Eddystone-URL](https://github.com/google/eddystone/tree/master/eddystone-url) beacons can be used with the [Physical Web](http://google.github.io/physical-web/).
+
+_Eddystone-URL-PSW_ and _Eddystone-UID-PSW_ beacons proposed with the [Physical Semantic Web](http://sisinflab.poliba.it/swottools/physicalweb/) project.
 
 ## Prerequisites
 
@@ -48,6 +50,23 @@ var options = {
 
 __Note__: an advertising interval of 100ms is used.
 
+### Eddystone-URL-PSW
+
+```javascript
+var url = 'http://goo.gl/OydkqE'; // SisInfLab - Physical Semantic Web
+
+eddystoneBeacon.advertisePswUrl(url, [options]);
+```
+
+### Eddystone-UID-PSW
+
+```javascript
+var namespaceId = '00000001000000000000'; // ONTO_ID (4B) + Resource_ID (6B) 
+var instanceId = '001122334455'; // MAC address of a Bluetooth Device (6B)
+
+eddystoneBeacon.advertisePswUid(namespaceId, instanceId, [options]);
+```
+
 ### [Eddystone-URL](https://github.com/google/eddystone/tree/master/eddystone-url)
 
 ```javascript
@@ -89,6 +108,9 @@ eddystoneBeacon.setTemperature(temperature);
 
 ### Examples
 
+ * Eddystone-PSW
+   * [url_psw_beacons](examples/psw/url_psw_beacons.js) - create a Eddystone-URL-PSW Beacon
+   * [uid_psw_beacons](examples/psw/uid_psw_beacons.js) - create a Eddystone-UID-PSW Beacon
  * [Eddystone-URL](https://github.com/google/eddystone/tree/master/eddystone-url)
    * [simple](examples/url/simple.js) - easiest way to create a Eddystone-URL Beacon
    * [power-level](examples/url/power-level.js) - create a Eddystone-URL Beacon specifying txPowerLevel
