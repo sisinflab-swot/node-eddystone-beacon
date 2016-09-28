@@ -109,8 +109,8 @@ eddystoneBeacon.setTemperature(temperature);
 ### Examples
 
  * Eddystone-PSW
-   * [url_psw_beacons](examples/psw/url_psw_beacons.js) - create a Eddystone-URL-PSW Beacon
-   * [uid_psw_beacons](examples/psw/uid_psw_beacons.js) - create a Eddystone-UID-PSW Beacon
+   * [url_psw_beacons](examples/psw/url_psw_beacon.js) - create a Eddystone-URL-PSW Beacon
+   * [uid_psw_beacons](examples/psw/uid_psw_beacon.js) - create a Eddystone-UID-PSW Beacon
  * [Eddystone-URL](https://github.com/google/eddystone/tree/master/eddystone-url)
    * [simple](examples/url/simple.js) - easiest way to create a Eddystone-URL Beacon
    * [power-level](examples/url/power-level.js) - create a Eddystone-URL Beacon specifying txPowerLevel
