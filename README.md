@@ -53,7 +53,7 @@ __Note__: an advertising interval of 100ms is used.
 ### Eddystone-URL-PSW
 
 ```javascript
-var url = 'http://goo.gl/OydkqE'; // SisInfLab - Physical Semantic Web
+eddystoneBeacon.advertisePswUrl("http://goo.gl/ujNAaj"); // OWL annotation of Karlskirche (Wien)
 
 eddystoneBeacon.advertisePswUrl(url, [options]);
 ```
@@ -62,7 +62,7 @@ eddystoneBeacon.advertisePswUrl(url, [options]);
 
 ```javascript
 var namespaceId = '00000001000000000000'; // ONTO_ID (4B) + Resource_ID (6B) 
-var instanceId = '001122334455'; // MAC address of a Bluetooth Device (6B)
+var instanceId = '001122334455'; // MAC address of a Bluetooth Device (6B) [00:11:22:33:44:55]
 
 eddystoneBeacon.advertisePswUid(namespaceId, instanceId, [options]);
 ```

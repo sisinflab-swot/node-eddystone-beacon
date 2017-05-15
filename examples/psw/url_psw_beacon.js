@@ -7,11 +7,9 @@ var options = {
   tlmPeriod: 10      // every 10 advertisements
 };
 
-eddystoneBeacon.advertisePswUrl("http://goo.gl/dwT0yQ"); // ZoneA
+eddystoneBeacon.advertisePswUrl("http://goo.gl/ujNAaj"); // OWL annotation of Karlskirche (Wien)
+
+eddystoneBeacon.advertisePswUrl("http://goo.gl/3XAOix"); // OWL annotation of Parlamentsgebäude (Wien)
+eddystoneBeacon.advertisePswUrl("http://goo.gl/9CXnz7"); // OWL annotation of Augustinerkirche (Wien)
 
 console.log("Eddystone PSW Url-Beacon published!");
-
-//eddystoneBeacon.advertiseUrl("http://goo.gl/OydkqE"); // SisInfLab - Physical Semantic Web
-//eddystoneBeacon.advertiseUrl("http://goo.gl/dwT0yQ"); // ZoneA
-//eddystoneBeacon.advertiseUrl("http://goo.gl/stNbJr"); // ZoneB
-//eddystoneBeacon.advertiseUrl("http://goo.gl/8qPRgm"); // ZoneC
