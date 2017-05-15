@@ -53,7 +53,7 @@ __Note__: an advertising interval of 100ms is used.
 ### Eddystone-URL-PSW
 
 ```javascript
-eddystoneBeacon.advertisePswUrl("http://goo.gl/ujNAaj"); // OWL annotation of Karlskirche (Wien)
+var url = "http://goo.gl/ujNAaj"; // OWL annotation of Karlskirche (Wien)
 
 eddystoneBeacon.advertisePswUrl(url, [options]);
 ```
